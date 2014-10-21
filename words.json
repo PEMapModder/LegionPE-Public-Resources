@@ -1,0 +1,26 @@
+{
+	"badwords": [
+		"cunt",
+		"bitch",
+		"nigga",
+		"fuck",
+		"fucker",
+		"fucking",
+		"fak",
+		"fuk",
+		"vagina",
+		"whore",
+		"slut",
+		"penis",
+		"dick",
+		"bastard",
+		"asshole",
+		"bullshit",
+		"shit",
+		"sh!t",
+		"fuckingbitch",
+		"dickhead"
+	],
+	"badword_detection_regexp": "#(^|[^a-z])(%s)($|[^a-z])#i",
+	"color_sign": "§"
+}
