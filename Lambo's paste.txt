@@ -1,0 +1,238 @@
+Basically, a list of things I would like to be in the Legion PE plugins.
+This DOES NOT have to all be added in the first release!
+ 
+Commands:
+~ /stats
+        Ranks that will be able to use this command: Default, Donator, Donator+, VIP, VIP+, Trial-mod, Moderator, Head-Moderator, Admin, Head-Admin, Owner
+        Shows stats of the gamemode that you are currently playing
+        Example: I am playing PvP and I want to see my PvP stats, so I type /stats and I should get a message like this:
+        [PvP Stats]
+        - Kills: 139
+        - Deaths: 68
+        - Kill/death ratio: 2.04
+        and different messages for spleef, infected etc.
+ 
+~ /mute <player>
+        Ranks that will be able to use this command: Default, Tester, Donator, Donator+, VIP, VIP+, Trial-mod, Moderator, Head-Moderator, Admin, Head-Admin, Owner
+        Be able to mute any player you like (THE PLAYER WILL ONLY BE MUTED FOR YOU, NO ONE ELSE), so messages in chat from that
+        player will not show and you cannot receive any private messages either
+ 
+~ /muted
+        Ranks that will be able to use this command: Default, Tester, Donator, Donator+, VIP, VIP+, Trial-mod, Moderator, Head-Moderator, Admin, Head-Admin, Owner
+        Show the players that you have currently muted
+ 
+~ /unmute <player>
+        Ranks that will be able to use this command: Default, Tester, Donator, Donator+, VIP, VIP+, Trial-mod, Moderator, Head-Moderator, Admin, Head-Admin, Owner
+        Un-mute a player that you have muted
+ 
+~ /powermute <player> <time>
+        Ranks that will be able to use this command: Trial-mod, Moderator, Head-Moderator, Admin, Head-Admin, Owner
+        Mute a player for a specified amount of time (minutes) (THE PLAYER WILL BE MUTED FOR EVERYONE!)
+ 
+~ /powerunmute <player>
+        Ranks that will be able to use this command: Trial-mod, Moderator, Head-Moderator, Admin, Head-Admin, Owner
+        Un-mute a player (THE PLAYER WILL BE UNMUTED FOR EVERYONE!)
+ 
+~ /powermuted
+        Ranks that will be able to use this command:Trial-mod, Moderator, Head-Moderator, Admin, Head-Admin, Owner
+        View all players that are currently muted
+ 
+~ /chat <on/off/color>
+        Ranks that will be able to use this command: Default, Tester, Donator, Donator+, VIP, VIP+, Trial-mod, Moderator, Head-Moderator, Admin, Head-Admin, Owner
+        Turn chat on or off, and turn color chat on or off (color chat only for BlockLauncher users, warn the player!)
+ 
+~ /friend <add/remove/list/requests/pending>
+        Ranks that will be able to use this command: Default, Tester, Donator, Donator+, VIP, VIP+, Trial-mod, Moderator, Head-Moderator, Admin, Head-Admin, Owner
+        add:
+                Add a friend to your friends list (send a request to the player!)
+        remove:
+                Remove a friend from your friends list (remove from friends list/remove from pending!)
+        list:
+                View a list of all your friends and if they are online or not
+        requests:
+                View all friend requests that you have received
+        pending:
+                View all pending friend requests (requests that you have sent to someone else!)
+        Max-friends:
+                default: 5
+                Tester: 5
+                Donator: 7
+                Donator+: 10
+                VIP: 15
+                VIP+: 20
+                Trial-mod: 10
+                Moderator: 10
+                Head-Moderator: 10
+                Admin: 15
+                Head-Admin: 15
+                Owner: unlimited
+ 
+~ /hub
+        Ranks that will be able to use this command: Default, Tester, Donator, Donator+, VIP, VIP+, Trial-mod, Moderator, Head-Moderator, Admin, Head-Admin, Owner
+        Teleport to the hub
+ 
+~ /team <create/add/join/kick/view/leave/requests>
+        Ranks that will be able to use this command: Default, Tester, Donator, Donator+, VIP, VIP+, Trial-mod, Moderator, Head-Moderator, Admin, Head-Admin, Owner
+        PLEASE NOTE: ONLY DONATORS & OWNERS WILL BE ABLE TO CREATE A TEAM!
+        create <team name>:
+                (ONLY FOR DONATORS & OWNERS)
+                Create a team (no spaces in name!)
+        add <player>:
+                (ONLY FOR TEAM OWNERS/MODERATORS)
+                Invite a player to your team
+        join <team>:
+                (FOR ALL RANKS)
+                Join a team that you have been invited too
+        kick <player>:
+                (ONLY FOR TEAM OWNERS/MODERATORS)
+                Kick a player from the team
+        view:
+                View the stats of your team (team name, team owner and moderators, total kills, total deaths, total KDR etc..)
+        leave:
+                Leave your team
+        requests:
+                View all requests that you have gotten to join a team
+ 
+~ /coins
+        Ranks that will be able to use this command: Default, Tester, Donator, Donator+, VIP, VIP+, Trial-mod, Moderator, Head-Moderator, Admin, Head-Admin, Owner
+        View the amount of coins you have
+
+Chat:
+~ 5 second delay between each message except staff members
+~ block these words: array("cunt","bitch","nigga","fuck","fucker","fucking","fak","fuk","vagina","whore","slut","penis","dick","bastard","asshole","bullshit","shit","sh!t","fuckingbitch","dickhead");
+~ make sure the player cannot send the same message as sent before! (except staff)
+~ if you ever have time to create a plugin to create teams/groups in pvp, please make it so that you can have a team chat too
+
+Staff:
+levels:
+prefix = moderator, admin, etc..
+
+normal chat:
+hub: [prefix]username: message
+parkour: [prefix][level/checkpoint]username: message
+pvp: [prefix][kills]username: message
+spleef: [prefix][wins]username: message
+infected: [prefix][kills]username: message
+color chat:
+hub: §7[§cprefix§7]§fusername§7:§f message
+parkour: §7[§cprefix§7][§elevel/checkpoint§7]§fusername:§f message
+pvp: §7[§cprefix§7][§ckills§7]§fusername§7:§f message
+spleef: §7[§cprefix§7][§cwins§7]§fusername§7:§f message
+infected: §7[§cprefix§7][§ckills§7]§fusername§7:§f message
+
+Normal players:
+levels:
+
+normal chat:
+hub: username: message
+parkour: [level/checkpoint]username: message
+pvp: [pvp tag (tags below!)][kills]username: message
+spleef: [wins]username: message
+infected: [kills]username: message
+color chat:
+hub: §7username: message
+parkour: §7[§elevel/checkpoint§7]username: message
+pvp: §7[§epvp tag (tags below!)§7][§ckills§7]username: message
+spleef: §7[§cwins§7]username: message
+infected: §7[§ckills§7]username: message
+ 
+Donators:
+Normal players:
+levels:
+prefix = donator, vip, vip+, etc...
+
+normal chat:
+hub: [prefix]username: message
+parkour: [prefix][level/checkpoint]username: message
+pvp: [prefix][kills]username: message
+spleef: [prefix][wins]username: message
+infected: [prefix][kills]username: message
+color chat:
+hub: §7[§bprefix§7]§fusername§7:§f message
+parkour: §7[§bprefix§7][§elevel/checkpoint§7]§fusername§7:§f message
+pvp: §7[§bprefix§7][§ckills§7]§fusername§7:§f message
+spleef: §7[§bprefix§7][§cwins§7]§fusername§7:§f message
+infected: §7[§bprefix§7][§ckills§7]§fusername§7:§f message
+ 
+pvp tags with kills:
+ 
+if($kills >=25) $tag="Fighter";
+if($kills >=75) $tag="Killer";
+if($kills >=150) $tag="Dangerous";
+if($kills >=250) $tag="Hard";
+if($kills >=375) $tag="Beast";
+if($kills >=525) $tag="Elite";
+if($kills >=675) $tag="Warrior";
+if($kills >=870) $tag="Knight";
+if($kills >=1100) $tag="Addict";
+if($kills >=1350) $tag="Unstoppable";
+if($kills >=1625) $tag="Pro";
+if($kills >=1925) $tag="Hardcore";
+if($kills >=2250) $tag="Master";
+if($kills >=2600) $tag="Legend";
+if($kills >=2975) $tag="God";
+if($kills == 0) $kills="";
+
+
+website:
+
+we are going to have a custom website for legion pe, where you will be able to view stats of the server, info, donate, and view your own stats and leaderboards! we already have a big part of it done, view it here: http://legionpvp.eu/pe/web or http://legionpvp.eu/pe/tablet for tablets (mobile coming soon!)
+be aware the website isn't fully functional
+ 
+
+level functions:
+
+~ hub:
+	portals!
+
+~ PVP:
+	killstreaks!
+		every time you kill a player, you should get a message like this:
+		You have killed $player!
+		You now have a total of $kills kills.
+		Your killstreak is $killstreak!
+		if you have a killstreak of 3, broadcast to the chat "$player has got a TRIPLE KILL!"
+		if you have a killstreak of 5, broadcast to chat "$player has got a killstreak of 5!"
+		and the same goes on for a kill streak of 10, 25, 50, 75, 100
+	shop!
+		every time you kill a player, you will earn 1 coin
+		with those coins, you will be able to buy/upgrade items of your current kit
+		for a example, if you currently have a leather helmet, chestplate, leggings and boots,
+		you will be able to upgrade to a gold helmet, chestplate, etc... but you will have to buy them with coins
+		to buy these items, you can go to a shop under spawn and there will be signs like this:
+		[PVP Shop]
+		Buy
+		GOLDEN_HELMET
+		for 100 coins
+
+		for PEMapModder: please make the signs customisable so the prices aren't hardcoded
+	leaderboard!
+		there will be a in-game leaderboard (top 10 players with kills + KD) and a online leaderboard (hopefully all players) (don't worry pemapmodder, I will do web dev!)
+~
+
+	teams!
+		you will be able to create teams, there isn't much more to it :P
+
+~ SPLEEF:
+	multi-level arenas!
+		this will be a feature added in the future, and it will only be added if spleef is popular :P
+	leaderboard!
+		there will be a in-game leaderboard (top 10 players with wins + WLR win loose ratio) and a online leaderboard (hopefully all players) (don't worry pemapmodder, I will do web dev!)
+	bug free!
+		if you used to play spleef on the old legion pe, you should know that it was very buggy at the time and that there
+		were players that kept glitching in and out of the arenas, well in the new plugin that should all be fixed!
+
+~ PARKOUR:
+	checkpoints and different levels!
+		at the moment, we only have one level and different checkpoints, but in the future we are hoping to have
+		multiple levels all with checkpoints
+	timer!
+		there will be a timer for the shorter maps that don't have a checkpoint, and again, hopefully a online leaderboard
+		for that too!
+
+~ INFECTED!
+	more info soon... we will start development on this once our other mini-games are done
+
+will continue writing soon (maybe?)
+
+Source: http://pastebin.com/sHJKa0nN
