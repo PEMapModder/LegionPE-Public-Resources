@@ -3,6 +3,7 @@ CREATE TABLE players (
   uid INT PRIMARY KEY,
   names VARCHAR(1024),
   hash BINARY(64),
+  coins INT,
   lastonline INT,
   registry INT,
   lastip VARCHAR(32),

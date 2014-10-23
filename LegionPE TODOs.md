@@ -17,8 +17,9 @@ LegionPE Eta Plugin TODO List
     - [x] Update in-game sessions
     - [x] Update sessions when an operator switched worlds
 - [ ] Games
-  - [ ] Hub
+  - [x] Hub
     - [x] Portals
+	- [x] Inventory
   - [ ] KitPvP
     - [ ] `/stat`: kills, deaths, ratio
     - [ ] `/team`
@@ -30,10 +31,10 @@ LegionPE Eta Plugin TODO List
   - [ ] Parkour
     - [ ] Checkpoints
     - [ ] Teleport when fallen
-  - [ ] MySQL database for each game; independent
+	- [ ] Victory reward
 - [ ] Chat handling
   - [x] Subscribe to (read chat messages from) chat channels
-  - [ ] Update chat channels when changing sessions
+  - [x] Update chat channels when changing sessions
   - [x] Mandatory chat channel
   - [ ] Chat moderation
     - [x] Operators: free channels switching
