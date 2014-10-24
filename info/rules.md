@@ -51,10 +51,12 @@ If you have a problem, contact a staff member. Don't hesitate to ask the questio
 That's it! These rules will probably change.
 
 # Reporting
-To report players who misbehave...
+The main command to report is `/report`. An abuse of `/report` will lead to penalty.
 
-### in chat,
-Use the `/report <player> chat [message]` command to report. Read more about the commands in the [general commands page](general_commands.md).
+To report players who...
+
+### talk in chat incorrectly,
+Use the `/report <player> chat [message]` (chat report) command to report.
 
 `<player>` is the name of the player whom you want to report. The reported player **must be online** in order to let the plugin record his IP (and possibly use it to ban later).
 
@@ -62,10 +64,17 @@ Use the `/report <player> chat [message]` command to report. Read more about the
 
 Note that the latest 25 messages you are reading will be attached to your report. Also, if you switched to another world, it may not work correctly.
 
-An abuse of `/report` will lead to penalty.
+### move incorrectly,
+Use the `/report <player> move [message]` (motion report) command to report.
+
+`<player>` is the name of the player whom you want to report. The reported player **must be online** in order to let the plugin record his IP (and possibly use it to ban later).
+
+`[message]` is optional. If you want to tell the staff member reading the report something else, put your message here.
+
+The position and motion of the reported player in the past minute will be attached in the report. Since this attachment is pretty large for a database, players who abuse the motion report will be severely punished. Yes, you can grief the server by spamming motion reports to a degree we want to kill you in real life and find moderators and admins under your bed.
 
 # Staff Members
-A list of staff members and their powers can be found [here](https://github.com/PEMapModder/LegionPE-Public-Resources/blob/master/info/staffs.md).
+Information about staff members and their powers can be found [here](https://github.com/PEMapModder/LegionPE-Public-Resources/blob/master/info/staffs.md).
 
 # Donating
 Things about donating and ranks are mentioned at https://github.com/PEMapModder/LegionPE-Public/Resources/blob/master/LegionPE%20TODOs.md
