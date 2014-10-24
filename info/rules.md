@@ -45,7 +45,7 @@ Offensive words are banned under every circumstance. This server is designed for
 ### Do not stand AFK
 If you don't have any actions (move, interact with blocks or chat) for more than 5 minutes, you will be automatically kicked.
 
-## We have staff members for a reason
+#### We have staff members for a reason
 If you have a problem, contact a staff member. Don't hesitate to ask the question or tell your problem.
 
 That's it! These rules will probably change.
