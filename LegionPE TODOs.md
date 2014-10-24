@@ -16,6 +16,7 @@ LegionPE Eta Plugin TODO List
     - [x] Update authentication sessions
     - [x] Update in-game sessions
     - [x] Update sessions when an operator switched worlds
+  - [ ] Auto-kick AFK players (with DataPacketReceivedEvent)
 - [ ] Games
   - [x] Hub
     - [x] Portals
