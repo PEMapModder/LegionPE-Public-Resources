@@ -73,6 +73,9 @@ Use the `/report <player> move [message]` (motion report) command to report.
 
 The position and motion of the reported player in the past minute will be attached in the report. Since this attachment is pretty large for a database, players who abuse the motion report will be severely punished. Yes, you can grief the server by spamming motion reports to a degree we want to kill you in real life and find moderators and admins under your bed.
 
+#### To report server issues,
+Please report to staff members. The issues will be fixed sonner if you talk to a staff member of higher rank, most favourably [developers](https://github.com/PEMapModder/LegionPE-Public-Resources/info/staffs.md).
+
 ## Staff Members
 Information about staff members and their powers can be found [here](https://github.com/PEMapModder/LegionPE-Public-Resources/blob/master/info/staffs.md).
 
