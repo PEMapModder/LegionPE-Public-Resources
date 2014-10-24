@@ -12,6 +12,11 @@ CREATE TABLE players (
   ignoring VARCHAR(1024),
   chatinfo SMALLINT
 );
+CREATE TABLE purchases (
+  owner INT,
+  expiry INT,
+  product INT
+);
 CREATE TABLE kitpvp (
   uid INT PRIMARY KEY,
   kills INT,
