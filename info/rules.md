@@ -17,7 +17,7 @@ This also means no abusing/exploiting Minecraft glitches/bugs.
 That means **no harassing player**s or using racial slurs **or threatening** players. Everyone should be treated with respect. If someone is disrespecting you badly (threatening, harassing etc.) in chat, please [report](#reporting) that player. (Click the hyperlink to see how to report conveniently)
 
 #### Do not threaten to hack the server
-If you do so, we wil mute you and possibly issue warning points.
+If you do so, we will mute you and possibly issue warning points.
   
 #### Use an appropriate username
 Any inappropriate usernames will be banned. To make it clear what "inappropriate" means, you can refer to mainly this list:
