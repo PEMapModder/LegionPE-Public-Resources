@@ -1,27 +1,17 @@
 Staffs List
 ===
-Reminder: To read more easily, go to https://github.com/PEMapModder/LegionPE-Public-Resources/blob/master/info/rules.md
+Reminder: To read more easily, go to https://github.com/PEMapModder/LegionPE-Public-Resources/blob/master/info/staffs.md
 
-Developer
-  - PEMapModder
-  - Lambo
+Developers: PEMapModder, Lambo
 
-Trial-Moderator
-  - None
+Trial-Moderator: None
 
-Moderator
-  - Sean_MCPE
-  - TrollofMCPE
+Moderator: Sean_MCPE, TrollofMCPE
 
-Head-Moderator
-  - None
+Head-Moderator: None
 
-Admin
-  - None
+Admin: None
 
-Head-Admin
-  - PEMapModder
+Head-Admin: PEMapModder
 
-Owner
-  - MadMckMax
-  - Lambo
+Owner: MadMckMax, Lambo
