@@ -77,7 +77,7 @@ The position and motion of the reported player in the past minute will be attach
 Information about staff members and their powers can be found [here](https://github.com/PEMapModder/LegionPE-Public-Resources/blob/master/info/staffs.md).
 
 ## Donating
-Things about donating and ranks are mentioned at https://github.com/PEMapModder/LegionPE-Public/Resources/blob/master/LegionPE%20TODOs.md
+Things about donating and ranks are mentioned at https://github.com/PEMapModder/LegionPE-Public-Resources/blob/master/LegionPE%20TODOs.md
 
 ## Warning Points
 We do not ban players directly. Instead, we issue warning points. If a player receives too many warning points, he/she will be banned for a period of time according to the number of warning points. Of course, in special cases, we will directly permanently ban some players.
