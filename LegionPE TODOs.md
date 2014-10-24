@@ -84,11 +84,11 @@ The lower 4 bits are for how "important" the user is. That is, how much the user
 | :---: | :---: | :---- |
 | default | `0000` | none |
 | tester | `0001` | be a tester |
-| donator | `0100` | $2.5 |
-| donator + | `0101` | $5 |
-| VIP | `1100` | $10 |
-| VIP + | `1101` | $15 |
-| VIP * | `1110` | ? |
+| donator | `0100` | donate $2.5 |
+| donator + | `0101` | donate $5 |
+| VIP | `1100` | donate $10 |
+| VIP + | `1101` | donate $15 |
+| VIP * | `1110` | donate $20 |
 
 ### Ranked Permission
 The 3rd quarter (4 bits of 16) of the bitmask is for the ranked permissions a user has.
