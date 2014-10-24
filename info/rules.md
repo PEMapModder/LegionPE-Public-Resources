@@ -14,7 +14,7 @@ You may also contact a staff member directly using `/msg <staff member name> <me
 This also means no abusing/exploiting Minecraft glitches/bugs.
 
 ### Treat everyone with respect
-That means **no harassing player**s or using racial slurs **or threatening** players. Everyone should be treated with respect. If someone is disrespecting you badly (threatening, harassing etc.) in chat, please [report](#Reporting) that player. (Click the hyperlink to see how to report conveniently)
+That means **no harassing player**s or using racial slurs **or threatening** players. Everyone should be treated with respect. If someone is disrespecting you badly (threatening, harassing etc.) in chat, please [report](#reporting) that player. (Click the hyperlink to see how to report conveniently)
 
 ### Do not threaten to hack the server
 If you do so, we wil mute you and possibly issue warning points.
@@ -29,12 +29,12 @@ Any inappropriate usernames will be banned. To make it clear what "inappropriate
 ### There is no advertising allowed
 Advertising other servers, YouTube channels, websites, etc. are banned. Warning points will be issued depending on actual circumstances.
 
-If you find a player advertising, please [report](#Reporting) that player. (Click the hyperlink to see how to report conveniently)
+If you find a player advertising, please [report](#reporting) that player. (Click the hyperlink to see how to report conveniently)
 
 ### No unfair mods
 Mods that give you advantage over other players (excluding anti-lagginess mods) are not allowed.
 
-If you find or suspect a player using unfair mods, please [report](#Reporting) that player. (Click the hyperlink to see how to report conveniently)
+If you find or suspect a player using unfair mods, please [report](#reporting) that player. (Click the hyperlink to see how to report conveniently)
 
 ### Use capitalization correctly
 That means writing whole sentances is caps is not allowed. Use capital letters with proper grammar.
