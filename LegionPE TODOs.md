@@ -24,6 +24,29 @@ LegionPE Eta Plugin TODO List
   - [ ] KitPvP
     - [ ] `/stat`: kills, deaths, ratio
     - [ ] `/team`
+    - [ ] `/friend`
+      - setup MySQL table `kitpvp_friends`
+      - [x] `/friend` help message
+      - [x] `/friend add`
+        - [x] Send friend requests
+        - [x] Accept requests
+        - [x] Check maximum number of friends
+      - [ ] `/friend remove`
+        - [ ] Update both sides
+      - [ ] `/friend list`
+        - [ ] Fetch from MySQL table (remember to fetch from both `smalluid` and `largeuid` columns)
+        - [ ] Maximum friends
+        - [ ] Whether they are online
+      - [ ] `/friend inbox`
+        - [ ] Alias `requests`
+        - [ ] List
+        - [ ] Warn if cannot accept
+        - [ ] `/friend inbox deny <player>`
+      - [ ] `/friend outbox`
+        - [ ] Alias `pending`
+        - [ ] List
+        - [ ] `/friend outbox remove <player>`
+      - [ ] Remind once rejoin KitPvP
   - [ ] Spleef
     - [ ] `/stat`: wins, loses, ratio
     - [ ] arena generation (100% code?)
@@ -33,6 +56,24 @@ LegionPE Eta Plugin TODO List
     - [ ] Checkpoints
     - [ ] Teleport when fallen
 	- [ ] Victory reward
+- [ ] Teams
+  - [ ] `/team`
+    - [ ] Database setup
+    - [ ] `/team create`
+      - [ ] Permission check (@Lambo16 why limit to owners and donators?)
+      - [ ] Validate name
+      - [ ] Create team
+    - [ ] `/team add`
+      - [ ] Send invitation
+    - [ ] `/team join`
+      - [ ] Accept invitation
+    - [ ] `/team kick`
+    - [ ] `/team mod` make player moderator inside team
+    - [ ] `/team view`
+      - [ ] team stats from all games
+    - [ ] `/team leave`
+    - [ ] `/team requests`
+    - [ ] team channel setup
 - [ ] Chat handling
   - [x] Subscribe to (read chat messages from) chat channels
   - [x] Update chat channels when changing sessions
@@ -40,7 +81,7 @@ LegionPE Eta Plugin TODO List
   - [ ] Chat moderation
     - [x] Operators: free channels switching
     - [ ] Spam detection
-    - [ ] Bad word filtering
+    - [x] Bad word filtering
 - [ ] Commands
   - [x] /chat on|off
   - [x] /chat color|decolor
@@ -55,15 +96,15 @@ LegionPE Eta Plugin TODO List
   - [ ] /info [<game>|rules|ranks|staffs]
     - [x] Sending info (_need better sending_)
     - [ ] Info writing
-      - [ ] rules
-      - [ ] ranks
-      - [ ] staffs
+      - [x] rules
+      - [x] ranks
+      - [x] staffs
       - [ ] games
         - [ ] KitPvP
         - [ ] Spleef
         - [ ] Parkour
         - [ ] Infected
-  - [ ] /quit (alias /hub)
+  - [ ] `/quit` (alias `/hub`)
 - [ ] Provide data to MySQL server for website
   - [ ] Server/Games average number of players (per 30 minutes)
 - [ ] Emergency maintenance HTTP server
