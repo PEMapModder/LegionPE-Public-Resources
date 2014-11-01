@@ -10,7 +10,12 @@ CREATE TABLE players (
   histip VARCHAR(1024),
   ipconfig TINYINT,
   ignoring VARCHAR(1024),
-  chatinfo SMALLINT
+  chatinfo SMALLINT,
+  primaryname VARCHAR(20),
+);
+CREATE TABLE ranks (
+  uid INT PRIMARY KEY,
+  rank SMALLINT
 );
 CREATE TABLE purchases (
   owner INT,
@@ -22,6 +27,11 @@ CREATE TABLE kitpvp (
   kills INT,
   deaths INT,
   kit SMALLINT
+);
+CREATE TABLE kitpvp_friends (
+  smalluid INT,
+  largeuid INT,
+  type SMALLINT
 );
 CREATE TABLE ids (
   name VARCHAR(8) PRIMARY KEY,
