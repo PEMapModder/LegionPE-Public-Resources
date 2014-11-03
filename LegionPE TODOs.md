@@ -7,7 +7,7 @@ Abbreviations used in this list:
 - [ ] Authentication and session handling
   - [x] MySQL database for auth info
   - [x] Block player until he is authenticated
-  - [x] `R.F.C.` Allow name grouping when registering, using `/GROUP` **[IMPLEMENTED, BUT COMMENTED OUT]**
+  - [x] `R.F.C.` Allow name grouping when registering `IMPLEMENTED, BUT COMMENTED OUT`
   - [x] Block chat as password input panel
   - [x] Require information from player when registering
     - [x] Password
@@ -24,9 +24,9 @@ Abbreviations used in this list:
 - [ ] Games
   - [x] Hub
     - [x] Portals
-	- [x] Inventory
+    - [ ] Inventory
   - [ ] KitPvP
-    - [ ] `/stat`: kills, deaths, ratio
+    - [x] `/stat`: kills, deaths, ratio
     - [ ] `/team`
     - [ ] `/friend`
       - setup MySQL table `kitpvp_friends`
