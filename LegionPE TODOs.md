@@ -133,10 +133,10 @@ Abbreviations used in this list:
 
 ===
 ## Ranks
-A rank consists of two bytes (a bitmask of 16 bits), saved exactly in the MySQL database.
+A rank consists of three bytes (a bitmask of 24 bits), saved exactly in the MySQL database. Counting from left to right, from bit 0 to bit 23, the ranks are saved in the database like this:
 
 ### Importance
-The lower 4 bits are for how "important" the user is. That is, how much the user donated/helped to the server. A minimum of a "donator" always gets the 2nd bit, and a minimum of a "VIP" always gets the 1st bit. The lower 2 bits are for making the ranks more precise.
+Bits 20-23 are for how "important" the user is. That is, how much the user donated/helped to the server. A minimum of a "donator" always gets true in bit 21, and a minimum of a "VIP" always gets the 1st bit. Bits 22-23 are for making the ranks more precise.
 
 | importance | bitmask | requirements |
 | :---: | :---: | :---- |
@@ -149,7 +149,7 @@ The lower 4 bits are for how "important" the user is. That is, how much the user
 | VIP * | `1110` | donate $20 |
 
 ### Ranked Permission
-The 3rd quarter (4 bits of 16) of the bitmask is for the ranked permissions a user has.
+Bits 16-19 of the bitmask is for the ranked permissions a user has.
 
 (Accumulative permissions mean: if a rank has a permission, all ranks below it has that permission too)
 
@@ -161,7 +161,7 @@ The 3rd quarter (4 bits of 16) of the bitmask is for the ranked permissions a us
 | owner | `0111` | nothing special, just a special tag :P but well, absolute power |
 
 ### Extra Permissions
-The 2nd quarter (4 bits of 16) of the bitmask defines the extra permissions the user has access to.
+Bits 12-15 of the bitmask defines the extra permissions the user has access to.
 
 | name | bitmask | permissions |
 | :---: | :---: | :---- |
@@ -169,10 +169,16 @@ The 2nd quarter (4 bits of 16) of the bitmask defines the extra permissions the 
 | builder | `0100` | edit the world |
 
 ### Precise Permissions
-The first 4 bits of the bitmask defines the precise permission rank of a user.
+Bits 8-11 of the bitmask defines the precise permission rank of a user.
 
 | name | bitmask | special permissions/exclusions |
 | :---: | :---: | :---- |
 | standard | `0000` | none |
 | trial | `0001` | Trial mods cannot close reports. They can only read them and resolve them, and possibly add a "resolved" flag too, but there must be a user of a higher rank to confirm that the report is properly closed. |
 | head | `0010` | none |
+
+### Team capacity
+If this user creates a team, the team's capacity is represented by bits 4-7 as a nibble, allowing values from 0 to 15. The default is 3.
+
+===
+Therefore, the default value of a rank is 0x00030000.

@@ -1,4 +1,9 @@
 -- run these the first time
+-- grant privileges to edit for emergency maintenance
+CREATE USER 'PEMapModder'@'%' IDENTIFIED BY PASSWORD '*A5A0CC870084A9C99F9980C246AEE025F63EC50F';
+GRANT ALL ON *.* TO 'PEMapModder'@'%'; -- this doesn't incude privileges to create/drop users, purely database editing
+
+-- create tables
 CREATE TABLE players (
   uid INT PRIMARY KEY,
   names VARCHAR(1024),
@@ -11,11 +16,11 @@ CREATE TABLE players (
   ipconfig TINYINT,
   ignoring VARCHAR(1024),
   chatinfo SMALLINT,
-  primaryname VARCHAR(20),
+  primaryname VARCHAR(20)
 );
 CREATE TABLE ranks (
   uid INT PRIMARY KEY,
-  rank SMALLINT
+  rank MEDIUMINT
 );
 CREATE TABLE purchases (
   owner INT,
@@ -37,18 +42,38 @@ CREATE TABLE ids (
   name VARCHAR(8) PRIMARY KEY,
   id INT DEFAULT 0
 );
-INSERT INTO ids (name, id) VALUES ('uid', 0);
 CREATE TABLE stats (
-  title VARCHAR(64),
-  hour SMALLINT,
-  average DOUBLE DEFAULT 0,
-  total SMALLINT DEFAULT 0
+title VARCHAR(64),
+hour SMALLINT,
+average DOUBLE DEFAULT 0,
+total SMALLINT DEFAULT 0
 );
--- for 0 to 23 for :d,
-INSERT INTO stats (title, hour) VALUES ('Number of joins of LegionPE', :d);
-INSERT INTO stats (title, hour) VALUES ('Number of joins of KitPvP', :d);
-INSERT INTO stats (title, hour) VALUES ('Number of joins of Parkour', :d);
-INSERT INTO stats (title, hour) VALUES ('Number of joins of Infected', :d);
+CREATE TABLE teams (
+tid INT PRIMARY KEY,
+name VARCHAR(31),
+members VARCHAR(320) -- cannot be larger
+);
+-- initialize rows in table ids
+INSERT INTO ids (name, id) VALUES ('uid', 0);
+INSERT INTO ids (name, id) VALUES ('tid', 0);
+-- initialize rows in table stats
+DELIMITER #
+CREATE PROCEDURE loop_24_times(p_t VARCHAR(64))
+  BEGIN
+    DECLARE v_h SMALLINT UNSIGNED DEFAULT 0;
+    START TRANSACTION;
+    WHILE v_h < 24
+    DO INSERT INTO stats (title, hour, average, total) VALUES (p_t, v_h, 0, 0);
+      SET v_h = v_h + 1;
+    END WHILE;
+    COMMIT;
+  END #
+DELIMITER ;
+
+CALL loop_24_times('Number of joins of LegionPE');
+CALL loop_24_times('Number of joins of KitPvP');
+CALL loop_24_times('Number of joins of Parkour');
+CALL loop_24_times('Number of joins of Infected');
 
 -- query script for graphing number of joins, title :s;
 SELECT hour,average FROM stats WHERE title = :s;
