@@ -1,9 +1,13 @@
 LegionPE Eta Plugin TODO List
 ===
+Abbreviations used in this list:
+* _`R.F.C.` Request for Comments_: Everyone is welcome to submit comments about it, but we reserve the final decision. The whole list is looking for comments, but those tagged with `R.F.C.` are especially looking for community comment. Note that these are not votes, different from normal RFCs.
+* _`L.P.`: Low Priority_: The item is of low priority. It may noy be done when the server is first released.
+
 - [ ] Authentication and session handling
   - [x] MySQL database for auth info
   - [x] Block player until he is authenticated
-  - [x] Allow name grouping when registering, using `/GROUP` **[IMPLEMENTED, BUT COMMENTED OUT]**
+  - [x] `R.F.C.` Allow name grouping when registering, using `/GROUP` **[IMPLEMENTED, BUT COMMENTED OUT]**
   - [x] Block chat as password input panel
   - [x] Require information from player when registering
     - [x] Password
@@ -16,7 +20,7 @@ LegionPE Eta Plugin TODO List
     - [x] Update authentication sessions
     - [x] Update in-game sessions
     - [x] Update sessions when an operator switched worlds
-  - [ ] Auto-kick AFK players (with DataPacketReceivedEvent)
+  - [x] Auto-kick AFK players
 - [ ] Games
   - [x] Hub
     - [x] Portals
@@ -47,9 +51,21 @@ LegionPE Eta Plugin TODO List
         - [ ] List
         - [ ] `/friend outbox remove <player>`
       - [ ] Remind once rejoin KitPvP
+    - [ ] `L.P.` Teams support
+      - [ ] Same team should not kill each other
+    - [ ] `R.F.C.` Throw eggs for splash healing potion?
+      - [ ] Only for members of the same team?
   - [ ] Spleef
     - [ ] `/stat`: wins, loses, ratio
     - [ ] arena generation (100% code?)
+    - [ ] Auto-queue players to join arenas
+    - [ ] Teleport players to arena top, each player distant from one another
+    - [ ] Allow spectators
+    - [ ] Possibly generate random holes
+    - [ ] Support multi-floor
+    - [ ] Detect player falling (losing)
+    - [ ] `L.P.` If players surviving are all of the same team, end game.
+    - [ ] `L.P.` Count points with floors instead of wins and loses.
   - [ ] Infected
     - [ ] Waiting for @Lambo16
   - [ ] Parkour
