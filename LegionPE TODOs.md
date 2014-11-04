@@ -27,6 +27,9 @@ Abbreviations used in this list:
     - [ ] Inventory
   - [ ] KitPvP
     - [x] `/stat`: kills, deaths, ratio
+      - [x] `/stat top [rows]`
+        - [x] MySQL query once only!
+        - [x] Display kills, deaths, player name and K/D ratio
     - [ ] `/team`
     - [ ] `/friend`
       - setup MySQL table `kitpvp_friends`
@@ -42,14 +45,14 @@ Abbreviations used in this list:
         - [ ] Maximum friends
         - [ ] Whether they are online
       - [ ] `/friend inbox`
-        - [ ] Alias `requests`
-        - [ ] List
+        - [x] Alias `requests`
+        - [x] List
         - [ ] Warn if cannot accept
-        - [ ] `/friend inbox deny <player>`
+        - [x] ~~`/friend inbox deny <player>`~~ (replaced by `/friend remove`)
       - [ ] `/friend outbox`
-        - [ ] Alias `pending`
+        - [x] Alias `pending`
         - [ ] List
-        - [ ] `/friend outbox remove <player>`
+        - [ ] ~~`/friend outbox remove <player>`~~ (replaced by `/friend remove`)
       - [ ] Remind once rejoin KitPvP
     - [ ] `L.P.` Teams support
       - [ ] Same team should not kill each other

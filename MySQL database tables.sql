@@ -15,7 +15,6 @@ CREATE TABLE players (
   histip VARCHAR(1024),
   ipconfig TINYINT,
   ignoring VARCHAR(1024),
-  chatinfo SMALLINT,
   primaryname VARCHAR(20)
 );
 CREATE TABLE ranks (
