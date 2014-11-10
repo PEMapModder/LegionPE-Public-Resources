@@ -22,6 +22,7 @@ CREATE TABLE ranks (
   rank MEDIUMINT
 );
 CREATE TABLE purchases (
+  primary_id INT PRIMARY KEY AUTO_INCREMENT,
   owner INT,
   expiry INT,
   product INT

@@ -38,25 +38,23 @@ Abbreviations used in this list:
         - [x] Send friend requests
         - [x] Accept requests
         - [x] Check maximum number of friends
-      - [ ] `/friend remove`
-        - [ ] Update both sides
-      - [ ] `/friend list`
-        - [ ] Fetch from MySQL table (remember to fetch from both `smalluid` and `largeuid` columns)
-        - [ ] Maximum friends
-        - [ ] Whether they are online
-      - [ ] `/friend inbox`
+      - [x] `/friend remove`
+        - [x] Update both sides
+      - [x] `/friend list`
+        - [x] Fetch from MySQL table (remember to fetch from both `smalluid` and `largeuid` columns)
+        - [x] Maximum friends
+        - [x] Whether they are online
+      - [x] `/friend inbox`
         - [x] Alias `requests`
         - [x] List
-        - [ ] Warn if cannot accept
-        - [x] ~~`/friend inbox deny <player>`~~ (replaced by `/friend remove`)
-      - [ ] `/friend outbox`
+        - [x] Warn if cannot accept
+      - [x] `/friend outbox`
         - [x] Alias `pending`
-        - [ ] List
-        - [ ] ~~`/friend outbox remove <player>`~~ (replaced by `/friend remove`)
-      - [ ] Remind once rejoin KitPvP
+        - [x] List
+      - [x] Remind once rejoin KitPvP (it sends friend requests every time on join, but the system could be better)
     - [ ] `L.P.` Teams support
       - [ ] Same team should not kill each other
-    - [ ] `R.F.C.` Throw eggs for splash healing potion?
+    - [ ] `R.F.C.` `L.P.` Throw ~~eggs~~ snowballs for splash potion (what) effect? (Christmas special)
       - [ ] Only for members of the same team?
   - [ ] Spleef
     - [ ] `/stat`: wins, loses, ratio
