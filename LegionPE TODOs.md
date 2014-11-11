@@ -7,7 +7,6 @@ Abbreviations used in this list:
 - [ ] Authentication and session handling
   - [x] MySQL database for auth info
   - [x] Block player until he is authenticated
-  - [x] `R.F.C.` Allow name grouping when registering `IMPLEMENTED, BUT COMMENTED OUT`
   - [x] Block chat as password input panel
   - [x] Require information from player when registering
     - [x] Password

@@ -2,12 +2,14 @@
 -- grant privileges to edit for emergency maintenance
 CREATE USER 'PEMapModder'@'%' IDENTIFIED BY PASSWORD '*A5A0CC870084A9C99F9980C246AEE025F63EC50F';
 GRANT ALL ON *.* TO 'PEMapModder'@'%'; -- this doesn't incude privileges to create/drop users, purely database editing
+CREATE USER 'webserver'@'%' IDENTIFIED BY PASSWORD '*A5A0CC870084A9C99F9980C246AEE025F63EC50F'; -- TODO change the password to the web server's query password.
+GRANT SELECT ON legionpe.* TO 'webserver'@'%';
 
 -- create tables
 CREATE TABLE players (
   uid INT PRIMARY KEY,
   names VARCHAR(1024),
-  hash BINARY(64),
+  hash CHAR(128),
   coins INT,
   lastonline INT,
   registry INT,
@@ -43,20 +45,21 @@ CREATE TABLE ids (
   id INT DEFAULT 0
 );
 CREATE TABLE stats (
-title VARCHAR(64),
-hour SMALLINT,
-average DOUBLE DEFAULT 0,
-total SMALLINT DEFAULT 0
+  title VARCHAR(64),
+  hour SMALLINT,
+  average DOUBLE DEFAULT 0,
+  total SMALLINT DEFAULT 0
 );
 CREATE TABLE teams (
-tid INT PRIMARY KEY,
-name VARCHAR(31),
-members VARCHAR(320) -- cannot be larger
+  tid INT PRIMARY KEY,
+  name VARCHAR(31),
+  members VARCHAR(320) -- cannot be larger
 );
+
 -- initialize rows in table ids
 INSERT INTO ids (name, id) VALUES ('uid', 0);
 INSERT INTO ids (name, id) VALUES ('tid', 0);
--- initialize rows in table stats
+
 DELIMITER #
 CREATE PROCEDURE loop_24_times(p_t VARCHAR(64))
   BEGIN
@@ -69,11 +72,14 @@ CREATE PROCEDURE loop_24_times(p_t VARCHAR(64))
     COMMIT;
   END #
 DELIMITER ;
-
 CALL loop_24_times('Number of joins of LegionPE');
 CALL loop_24_times('Number of joins of KitPvP');
 CALL loop_24_times('Number of joins of Parkour');
 CALL loop_24_times('Number of joins of Infected');
+CALL loop_24_times('Number of new players registered on LegionPE');
+CALL loop_24_times('Number of new players registered on KitPvP');
+CALL loop_24_times('Number of new players registered on Parkour');
+CALL loop_24_times('Number of new players registered on Infected');
 
 -- query script for graphing number of joins, title :s;
 SELECT hour,average FROM stats WHERE title = :s;
