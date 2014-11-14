@@ -1,5 +1,5 @@
 {
-	"badwords": [
+	badwords: [
 		"cunt",
 		"bitch",
 		"nigga",
@@ -48,7 +48,7 @@
 		"wank",
 		"wanker",
 	],
-	"badword_detection_regexp": "#(^|[^a-z])(%s)($|[^a-z])#i",
-	"badword_regexp_parenthese_order": 2, // the second pair of parentheses contain the badword (%s)
-	"color_sign": "§"
+	badword_detection_regexp: "#(^|[^a-z])(%s)($|[^a-z])#i",
+	badword_regexp_parenthese_order: 2, // the second pair of parentheses contain the badword (%s)
+	color_sign: "§"
 }
