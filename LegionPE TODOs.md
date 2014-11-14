@@ -148,6 +148,11 @@ Bits 20-23 are for how "important" the user is. That is, how much the user donat
 | VIP + | `1101` | donate $15 |
 | VIP * | `1110` | donate $20 |
 
+## Bugfixing list
+- [ ] World not getting loaded/not in Server array
+- [ ] Inventory bug: somehow plugin evaluated 0x40
+- [ ] Disable PvP by default
+
 ### Ranked Permission
 Bits 16-19 of the bitmask is for the ranked permissions a user has.
 
