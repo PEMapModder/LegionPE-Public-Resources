@@ -149,7 +149,7 @@ Bits 20-23 are for how "important" the user is. That is, how much the user donat
 | VIP * | `1110` | donate $20 |
 
 ## Bugfixing list
-- [ ] World not getting loaded/not in Server array
+- [x] World not getting loaded/not in Server array
 - [ ] Inventory bug: somehow plugin evaluated 0x40
 - [ ] Disable PvP by default
 
