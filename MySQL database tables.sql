@@ -13,7 +13,7 @@ CREATE TABLE players (
   coins INT,
   lastonline INT,
   registry INT,
-  lastip VARCHAR(32),
+  lastip VARCHAR(46),
   histip VARCHAR(1024),
   ipconfig TINYINT,
   ignoring VARCHAR(1024),
