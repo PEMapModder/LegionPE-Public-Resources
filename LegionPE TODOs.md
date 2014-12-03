@@ -23,14 +23,14 @@ Abbreviations used in this list:
 - [ ] Games
   - [x] Hub
     - [x] Portals
-    - [ ] Inventory
+    - [x] Inventory
   - [ ] KitPvP
     - [x] `/stat`: kills, deaths, ratio
       - [x] `/stat top [rows]`
         - [x] MySQL query once only!
         - [x] Display kills, deaths, player name and K/D ratio
     - [ ] `/team`
-    - [ ] `/friend`
+    - [x] `/friend`
       - setup MySQL table `kitpvp_friends`
       - [x] `/friend` help message
       - [x] `/friend add`
@@ -69,9 +69,9 @@ Abbreviations used in this list:
   - [ ] Infected
     - [ ] Waiting for @Lambo16
   - [ ] Parkour
-    - [ ] Checkpoints
-    - [ ] Teleport when fallen
-	- [ ] Victory reward
+    - [x] Checkpoints
+    - [x] Teleport when fallen
+	- [ ] `L.P.` Victory reward
 - [ ] Teams
   - [ ] `/team`
     - [ ] Database setup
@@ -90,13 +90,13 @@ Abbreviations used in this list:
     - [ ] `/team leave`
     - [ ] `/team requests`
     - [ ] team channel setup
-- [ ] Chat handling
+- [x] Chat handling
   - [x] Subscribe to (read chat messages from) chat channels
   - [x] Update chat channels when changing sessions
   - [x] Mandatory chat channel
-  - [ ] Chat moderation
+  - [x] Chat moderation
     - [x] Operators: free channels switching
-    - [ ] Spam detection
+    - [x] Spam detection
     - [x] Bad word filtering
 - [ ] Commands
   - [x] /chat on|off
@@ -120,14 +120,9 @@ Abbreviations used in this list:
         - [ ] Spleef
         - [ ] Parkour
         - [ ] Infected
-  - [ ] `/quit` (alias `/hub`)
-- [ ] Provide data to MySQL server for website
-  - [ ] Server/Games average number of players (per 30 minutes)
-- [ ] Emergency maintenance HTTP server
-  - [x] Socket creation
-  - [ ] Webpages
-    - [ ] MySQL database query
-    - [ ] Server status
+  - [x] `/quit` (alias `/hub`)
+- [x] Provide data to MySQL server for website
+  - [x] Server/Games average number of players (per 30 minutes)
 - [ ] **_External Public Plugin:_** [SpicyCapacitor](https://github.com/PEMapModder/Small-ZC-Plugins/tree/master/SpicyCapacitor): An operator's favourite plugin
 
 
@@ -150,7 +145,7 @@ Bits 20-23 are for how "important" the user is. That is, how much the user donat
 
 ## Bugfixing list
 - [x] World not getting loaded/not in Server array
-- [ ] Inventory bug: somehow plugin evaluated 0x40
+- [x] Inventory bug: somehow plugin evaluated 0x40
 - [ ] Disable PvP by default
 
 ### Ranked Permission
