@@ -2,8 +2,6 @@
 -- grant privileges to edit for emergency maintenance
 CREATE USER 'PEMapModder'@'%' IDENTIFIED BY PASSWORD '*A5A0CC870084A9C99F9980C246AEE025F63EC50F';
 GRANT ALL ON *.* TO 'PEMapModder'@'%'; -- this doesn't incude privileges to create/drop users, purely database editing
-CREATE USER 'webserver'@'%' IDENTIFIED BY PASSWORD '*A5A0CC870084A9C99F9980C246AEE025F63EC50F'; -- TODO change the password to the web server's query password.
-GRANT SELECT ON legionpe.* TO 'webserver'@'%';
 
 -- create tables
 CREATE TABLE players (
@@ -54,6 +52,11 @@ CREATE TABLE teams (
   tid INT PRIMARY KEY,
   name VARCHAR(31),
   members VARCHAR(320) -- cannot be larger
+);
+CREATE TABLE parkour (
+  uid INT PRIMARY KEY,
+  progress SMALLINT,
+  completions MEDIUMINT
 );
 
 -- initialize rows in table ids
