@@ -1,3 +1,16 @@
+-- lines to clear the database. Only run these for database reset.
+DROP USER 'PEMapModder'@'%';
+DROP TABLE players;
+DROP TABLE ranks;
+DROP TABLE purchases;
+DROP TABLE kitpvp;
+DROP TABLE kitpvp_friends;
+DROP TABLE ids;
+DROP TABLE stats;
+DROP TABLE teams;
+DROP TABLE parkour;
+DROP PROCEDURE loop_24_times;
+
 -- run these the first time
 -- grant privileges to edit for emergency maintenance
 CREATE USER 'PEMapModder'@'%' IDENTIFIED BY PASSWORD '*A5A0CC870084A9C99F9980C246AEE025F63EC50F';
@@ -62,10 +75,6 @@ CREATE TABLE parkour (
 -- initialize rows in tables
 INSERT INTO ids (name, id) VALUES ('uid', 1);
 INSERT INTO ids (name, id) VALUES ('tid', 0);
-INSERT INTO players VALUES (0, 'legionpe|',
-  '0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef',
-  100, 0, 0, '', '', 1, ',', 'legionpe'
-);
 
 DELIMITER #
 CREATE PROCEDURE loop_24_times(p_t VARCHAR(64))
