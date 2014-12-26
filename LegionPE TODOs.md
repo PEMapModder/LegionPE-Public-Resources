@@ -53,7 +53,8 @@ Abbreviations used in this list:
       - [x] Remind once rejoin KitPvP (it sends friend requests every time on join, but the system could be better)
     - [ ] `L.P.` Teams support
       - [ ] Same team should not kill each other
-    - [ ] `R.F.C.` `L.P.` Throw ~~eggs~~ snowballs for splash potion (what) effect? (Christmas special)
+    - [x] Christmas Special: Throw snowballs for 3-times knockback!
+    - [x] `R.F.C.` `L.P.` Throw eggs for splash potion healing effect!
       - [ ] Only for members of the same team?
   - [ ] Spleef
     - [ ] `/stat`: wins, loses, ratio
