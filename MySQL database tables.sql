@@ -1,21 +1,13 @@
 -- lines to clear the database. Only run these for database reset.
 DROP USER 'PEMapModder'@'%';
-DROP TABLE players;
-DROP TABLE ranks;
-DROP TABLE purchases;
-DROP TABLE kitpvp;
-DROP TABLE kitpvp_friends;
-DROP TABLE ids;
-DROP TABLE stats;
-DROP TABLE teams;
-DROP TABLE parkour;
-DROP PROCEDURE loop_24_times;
+DROP SCHEMA legionpe;
 
 -- run these the first time
+CREATE SCHEMA legionpe;
+USE legionpe;
 -- grant privileges to edit for emergency maintenance
 CREATE USER 'PEMapModder'@'%' IDENTIFIED BY PASSWORD '*A5A0CC870084A9C99F9980C246AEE025F63EC50F';
 GRANT ALL ON legionpe.* TO 'PEMapModder'@'%'; -- this doesn't incude privileges to create/drop users, purely database editing
-
 -- create tables
 CREATE TABLE players (
   uid INT PRIMARY KEY,
@@ -70,6 +62,11 @@ CREATE TABLE parkour (
   uid INT PRIMARY KEY,
   progress SMALLINT,
   completions MEDIUMINT
+);
+CREATE TABLE spleef (
+  uid INT PRIMARY KEY,
+  wins MEDIUMINT,
+  loses MEDIUMINT
 );
 
 -- initialize rows in tables
