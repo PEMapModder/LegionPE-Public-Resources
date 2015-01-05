@@ -26,12 +26,6 @@ CREATE TABLE ranks (
   uid INT PRIMARY KEY,
   rank MEDIUMINT
 );
-CREATE TABLE purchases (
-  primary_id INT PRIMARY KEY AUTO_INCREMENT,
-  owner INT,
-  expiry INT,
-  product INT
-);
 CREATE TABLE kitpvp (
   uid INT PRIMARY KEY,
   kills INT,
@@ -42,6 +36,19 @@ CREATE TABLE kitpvp_friends (
   smalluid INT,
   largeuid INT,
   type SMALLINT
+);
+CREATE TABLE kitpvp_kits (
+  uid INT,
+  kitid SMALLINT,
+  helmet SMALLINT,
+  chestplate SMALLINT,
+  leggings SMALLINT,
+  boots SMALLINT,
+  weapon SMALLINT,
+  weapon_cnt SMALLINT,
+  arrow_cnt SMALLINT,
+  food SMALLINT,
+  food_cnt SMALLINT
 );
 CREATE TABLE ids (
   name VARCHAR(8) PRIMARY KEY,
