@@ -1,6 +1,5 @@
 LegionPE Rules and Moderating
 ===
-Reminder: To read more easily, go to https://github.com/PEMapModder/LegionPE-Public-Resources/blob/master/info/rules.md
 ## General Rules
 
 #### No spamming
@@ -9,7 +8,7 @@ Spamming is banned under every condition. Warning points will be issued dependin
 #### No exploiting glitches/bugs
 If you find a glitch or bug in one of our servers/mini-games, do not use it for advantages over other players or to troll. Just report the glitch/bug to us by sending an email. You will recieve a reward.
 
-You may also contact a staff member directly using `/msg <staff member name> <message ...>`. Do not talk it aloud, as this will let other players know this and increase the chance of the glitch/bug being exploited.
+You may also contact a staff member directly using `/w <staff member name> <message ...>`. Do not talk it aloud, as this will let other players know this and increase the chance of the glitch/bug being exploited.
 
 This also means no abusing/exploiting Minecraft glitches/bugs.
 
@@ -84,3 +83,5 @@ Things about donating and ranks are mentioned at https://github.com/PEMapModder/
 
 ## Warning Points
 We do not ban players directly. Instead, we issue warning points. If a player receives too many warning points, he/she will be banned for a period of time according to the number of warning points. Of course, in special cases, we will directly permanently ban some players.
+
+Reminder: To read more easily, go to https://github.com/PEMapModder/LegionPE-Public-Resources/blob/master/info/rules.md
