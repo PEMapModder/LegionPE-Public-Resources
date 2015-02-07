@@ -54,17 +54,17 @@ Abbreviations used in this list:
     - [ ] `L.P.` Teams support
       - [ ] Same team should not kill each other
     - [x] Christmas Special: Throw snowballs for 3-times knockback!
-    - [x] `R.F.C.` `L.P.` Throw eggs for splash potion healing effect!
+    - [x] `R.F.C.` `L.P.` Throw snowballs for extra knockback!
       - [ ] Only for members of the same team?
   - [ ] Spleef
-    - [ ] `/stat`: wins, loses, ratio
-    - [ ] arena generation (100% code?)
+    - [x] `/stat`: wins, losses, draws
+    - [x] arena generation (100% code?)
     - [ ] Auto-queue players to join arenas
-    - [ ] Teleport players to arena top, each player distant from one another
-    - [ ] Allow spectators
+    - [x] Teleport players to arena top, each player distant from one another (`via hardcoding`)
+    - [x] Allow spectators
     - [ ] Possibly generate random holes
-    - [ ] Support multi-floor
-    - [ ] Detect player falling (losing)
+    - [x] Support multi-floor
+    - [x] Detect player falling (losing)
     - [ ] `L.P.` If players surviving are all of the same team, end game.
     - [ ] `L.P.` Count points with floors instead of wins and loses.
   - [ ] Infected
