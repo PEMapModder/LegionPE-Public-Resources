@@ -4,7 +4,7 @@ Abbreviations used in this list:
 * _`R.F.C.` Request for Comments_: Everyone is welcome to submit comments about it, but we reserve the final decision. The whole list is looking for comments, but those tagged with `R.F.C.` are especially looking for community comment. Note that these are not votes, different from normal RFCs.
 * _`L.P.`: Low Priority_: The item is of low priority. It may noy be done when the server is first released.
 
-- [ ] Authentication and session handling
+- [x] Authentication and session handling
   - [x] MySQL database for auth info
   - [x] Block player until he is authenticated
   - [x] Block chat as password input panel
@@ -12,7 +12,7 @@ Abbreviations used in this list:
     - [x] Password
     - [x] Repeat password and check if matches
     - [x] IP options
-  - [ ] `/auth`
+  - [x] `/auth`
   - [x] Disallow speaking password out in chat
   - [x] IP authentication
   - [x] Monitor player sessions
@@ -69,10 +69,10 @@ Abbreviations used in this list:
     - [ ] `L.P.` Count points with floors instead of wins and loses.
   - [ ] Infected
     - [ ] Waiting for @Lambo16
-  - [ ] Parkour
+  - [x] Parkour
     - [x] Checkpoints
     - [x] Teleport when fallen
-	- [ ] `L.P.` Victory reward
+    - [x] Victory reward
 - [ ] Teams
   - [ ] `/team`
     - [ ] Database setup
@@ -102,10 +102,10 @@ Abbreviations used in this list:
 - [ ] Commands
   - [x] /chat on|off
   - [x] /chat color|decolor
-  - [x] /channel
-    - [x] /channel join
-    - [x] /channel quit
-    - [x] /channel switch
+  - [ ] /channel
+    - [ ] /channel join
+    - [ ] /channel quit
+    - [ ] /channel switch
   - [x] /eval (dangerous, must-log)
   - [x] /ignore <player>
   - [x] /mute <player> [unmute time = 15 (minutes)]
@@ -177,9 +177,3 @@ Bits 8-11 of the bitmask defines the precise permission rank of a user.
 | standard | `0000` | none |
 | trial | `0001` | Trial mods cannot close reports. They can only read them and resolve them, and possibly add a "resolved" flag too, but there must be a user of a higher rank to confirm that the report is properly closed. |
 | head | `0010` | none |
-
-### Team capacity
-If this user creates a team, the team's capacity is represented by bits 4-7 as a nibble, allowing values from 0 to 15. The default is 3.
-
-===
-Therefore, the default value of a rank is 0x00030000.
