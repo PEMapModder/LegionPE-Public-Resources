@@ -51,8 +51,6 @@ Abbreviations used in this list:
         - [x] Alias `pending`
         - [x] List
       - [x] Remind once rejoin KitPvP (it sends friend requests every time on join, but the system could be better)
-    - [ ] `L.P.` Teams support
-      - [ ] Same team should not kill each other
     - [x] Christmas Special: Throw snowballs for 3-times knockback!
     - [x] `R.F.C.` `L.P.` Throw snowballs for extra knockback!
       - [ ] Only for members of the same team?
@@ -76,20 +74,19 @@ Abbreviations used in this list:
 - [ ] Teams
   - [ ] `/team`
     - [ ] Database setup
-    - [ ] `/team create`
-      - [ ] Permission check (@Lambo16 why limit to owners and donators?)
-      - [ ] Validate name
-      - [ ] Create team
-    - [ ] `/team add`
-      - [ ] Send invitation
-    - [ ] `/team join`
-      - [ ] Accept invitation
+    - [x] `/team create`
+      - [x] Permission check (@Lambo16 why limit to owners and donators?)
+      - [x] Validate name
+      - [x] Create team
+    - [x] `/team invite|uninvite`
+      - [x] Send invitation
+    - [x] `/team join`
+      - [x] Accept invitation
     - [ ] `/team kick`
-    - [ ] `/team mod` make player moderator inside team
-    - [ ] `/team view`
+    - [x] `/team promote|demote` promote|demote the player's rank inside the team
+    - [ ] `/team info`
       - [ ] team stats from all games
-    - [ ] `/team leave`
-    - [ ] `/team requests`
+    - [x] `/team quit`
     - [ ] team channel setup
 - [x] Chat handling
   - [x] Subscribe to (read chat messages from) chat channels
