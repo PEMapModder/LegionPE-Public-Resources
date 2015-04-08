@@ -121,8 +121,8 @@ Abbreviations used in this list:
   - [x] `/quit` (alias `/hub`)
 - [x] Provide data to MySQL server for website
   - [x] Server/Games average number of players (per 30 minutes)
-- [ ] **_External Public Plugin:_** [SpicyCapacitor](https://github.com/PEMapModder/Small-ZC-Plugins/tree/master/SpicyCapacitor): An operator's favourite plugin
-
+- [ ] Extras
+  - [ ] VIPs flying at spawn
 
 ===
 ## Ranks
