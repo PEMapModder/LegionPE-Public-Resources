@@ -174,3 +174,13 @@ Bits 8-11 of the bitmask defines the precise permission rank of a user.
 | standard | `0000` | none |
 | trial | `0001` | Trial mods cannot close reports. They can only read them and resolve them, and possibly add a "resolved" flag too, but there must be a user of a higher rank to confirm that the report is properly closed. |
 | head | `0010` | none |
+
+## Chat Message Color Policies
+* Chat messages from normal players are in default color
+* Chat messages from donators/VIPs/staff members are in white color
+* Error messages from commands or other server events are in red color
+* Warning messages from commands (i.e. the command has already been executed but a warning is raised) or other server events are in yellow color
+* Affirmative acknowledgement messages from commands notifying that the command has been run are in green color
+* Notice messages from commands or other server events are in aqua color
+* Highlighted words are in light purple color
+* Secondary highlighted words are in blue color
