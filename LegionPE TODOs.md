@@ -66,14 +66,19 @@ Abbreviations used in this list:
     - [ ] `L.P.` If players surviving are all of the same team, end game.
     - [ ] `L.P.` Count points with floors instead of wins and loses.
   - [ ] Infected
-    - [ ] Waiting for @Lambo16
+    - [ ] **Finish LegionPE-Branch first**
+    - [ ] Join methods at lobby
+    - [ ] Queue and tp to arena
+    - [ ] Pick two infected players
+    - [ ] 45 seconds before start
+    - [ ] Special armor
   - [x] Parkour
     - [x] Checkpoints
     - [x] Teleport when fallen
     - [x] Victory reward
 - [ ] Teams
-  - [ ] `/team`
-    - [ ] Database setup
+  - [x] `/team`
+    - [x] Database setup
     - [x] `/team create`
       - [x] Permission check (@Lambo16 why limit to owners and donators?)
       - [x] Validate name
@@ -82,12 +87,13 @@ Abbreviations used in this list:
       - [x] Send invitation
     - [x] `/team join`
       - [x] Accept invitation
-    - [ ] `/team kick`
+    - [x] `/team kick`
     - [x] `/team promote|demote` promote|demote the player's rank inside the team
-    - [ ] `/team info`
-      - [ ] team stats from all games
+    - [x] `/team info`
+      - [x] team stats from all games
     - [x] `/team quit`
-    - [ ] team channel setup
+    - [x] team channel setup
+  - [ ] team championship weekly
 - [x] Chat handling
   - [x] Subscribe to (read chat messages from) chat channels
   - [x] Update chat channels when changing sessions
@@ -121,8 +127,6 @@ Abbreviations used in this list:
   - [x] `/quit` (alias `/hub`)
 - [x] Provide data to MySQL server for website
   - [x] Server/Games average number of players (per 30 minutes)
-- [ ] Extras
-  - [ ] VIPs flying at spawn
 
 ===
 ## Ranks
@@ -140,11 +144,6 @@ Bits 20-23 are for how "important" the user is. That is, how much the user donat
 | VIP | `1100` | donate $10 |
 | VIP + | `1101` | donate $15 |
 | VIP * | `1110` | donate $20 |
-
-## Bugfixing list
-- [x] World not getting loaded/not in Server array
-- [x] Inventory bug: somehow plugin evaluated 0x40
-- [ ] Disable PvP by default
 
 ### Ranked Permission
 Bits 16-19 of the bitmask is for the ranked permissions a user has.
